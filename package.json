@@ -1,0 +1,20 @@
+{  
+    "name": "todo-app",  
+    "version": "1.0.0",  
+    "description": "A To-Do List App with user authentication and task management.",  
+    "main": "index.js",  
+    "scripts": {  
+        "start": "node server/index.js",  
+        "dev": "nodemon server/index.js"  
+    },  
+    "dependencies": {  
+        "express": "^4.17.1",  
+        "mongoose": "^5.10.9",  
+        "bcrypt": "^5.0.0",  
+        "jsonwebtoken": "^8.5.1",  
+        "body-parser": "^1.19.0"  
+    },  
+    "devDependencies": {  
+        "nodemon": "^2.0.7"  
+    }  
+}

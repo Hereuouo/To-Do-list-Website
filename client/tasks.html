@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Tasks</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+    <div class="container">  
+        <div class="header">  
+            <button id="logout-button">Log Out</button>  
+        </div>  
+        <h1>Your Tasks</h1>  
+        <input type="text" id="search-input" placeholder="Search tasks..." oninput="filterTasks()">  
+        <form class="input-area">  
+            <input type="text" id="task-input" placeholder="Add a new task..." required>  
+            <input type="date" id="due-date" required>  
+            <select id="priority-level">  
+                <option value="low">Low</option>  
+                <option value="medium">Medium</option>  
+                <option value="high">High</option>  
+            </select>  
+            <button type="button" id="add-task-button"><i class="fas fa-plus"></i> Add Task</button>  
+        </form>  
+        <div class="todos-container">  
+            <ul id="task-list"></ul>  
+        </div>  
+        <div class="stats-container">  
+            <div class="progress-container">  
+                <div class="progress" id="progress-bar">  
+                    <div class="inner-bar"></div>  
+                </div>  
+                <p id="progress-numbers">0/0</p>  
+            </div>  
+        </div>  
+    </div>  
+    <script src="app.js"></script>  
+</body>  
+</html>
